@@ -2,4 +2,4 @@
 
 # Explanation for YOLOv5 Code
 
-YOLOv5 Overview:
+<b>YOLOv5 Overview:
