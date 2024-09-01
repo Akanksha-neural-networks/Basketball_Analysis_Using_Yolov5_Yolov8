@@ -5,14 +5,19 @@
 <b>YOLOv5 Overview:</b> YOLOv5, is a sophisticated object detection system renowned for its accuracy and quickness. Instead of sifting through different areas of the image, it processes the full image at once to detect things in real time. YOLOv5 is widely utilized in real-world applications such as autonomous driving and video surveillance since it is simple to deploy.
 
 <b>Code Explanation (YOLOv5): </b><br>
+
 <b>Installation: </b> <br>
 To start, the libraries for deep learning and image processing are installed: torch, torchvision, and opencv-python. To use the trained model, a clone of the YOLOv5 GitHub repository is created.<br>
+
 <b>Model Loading: </b><br>
 The pre-trained YOLOv5s (small version) model is loaded from the Ultralytics GitHub repository using the torch.hub.load() function.<br>
+
 <b>Video Processing: </b><br>
 OpenCV's cv2 is used to capture the input video.Use VideoCapture(). Basic video metadata is extracted, including frame rate (FPS), frame width, and frame height.<br>
+
 <b>Object Detection: </b><br>
 Processing is done on the video frame by frame. The YOLOv5 model finds items in each frame and provides the names and bounding box coordinates. This label (label 32) identifies basketballs. The discovered object is surrounded by a rectangle, and the frame shows the object's confidence score.<br>
+
 <b>Frame Display: </b><br>
 Using cv2.cvtColor(), each processed frame is converted to RGB for display in a Jupyter notebook. It is then saved as an image and shown using IPython.display in the notebook.<br>
 
